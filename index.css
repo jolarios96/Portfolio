@@ -26,17 +26,17 @@ nav {
     min-width: 100%;
     align-items: center;
     justify-content: flex-end;
-
-    /* height: 4rem; */
 }
+
 nav a {
     color: rgb(255, 255, 255);
 
     font-size: 1.7rem;
     padding: 1rem;
 }
+
 nav a:hover {
-    background-color: rgb(0, 52, 52);
+    background-color: #003434;
 }
 
 main {
@@ -45,7 +45,7 @@ main {
 }
 
 #about {
-    background-color: darkcyan;
+    background-color: #008b8b;
     min-height: 100vh;
     min-width: 100%;
 
@@ -56,20 +56,60 @@ main {
     justify-content: center;
     align-items: center;
 }
-#about h1, #about p {
+
+#about h1,
+#about p {
     overflow: hidden;
     padding: 0;
     margin: 0;
 }
+
 #about h1 {
-    font-size: 4rem;
-}
-#about p {
-    font-size: 2rem;
+    font-size: 6rem;
 }
 
-footer {
-    background-color: darkturquoise;
+#about p {
+    font-size: 3rem;
+}
+
+#work {
+    padding-bottom: 3rem;
+
+    background-color: #00ADAE;
+    overflow: hidden;
+
+
+}
+#work h2{
+    font-size: 4rem;
+    text-align: center;
+}
+#project-container {
+    display: grid;
+    grid-template-columns: 28vw 28vw 28vw;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 2rem;
+}
+
+.project-wrapper {
+    height: 300px;
+
+    background-color: white;
+
+    border-radius: 15px;
+}
+
+#contact {
+    display: flex;
+
+    background-color: #00ced1;
     min-height: 250px;
     min-width: 100%;
 }
+
+/* footer {
+    background-color: #00ced1;
+    min-height: 250px;
+    min-width: 100%;
+} */
