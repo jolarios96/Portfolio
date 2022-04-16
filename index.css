@@ -1,5 +1,7 @@
 html {
     min-width: 100%;
+    background-color: #019292;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,7 +21,8 @@ nav {
     align-items: center;
     justify-content: flex-end;
 
-    height: 4rem
+    height: 4rem;
+    z-index: 10;
 }
 
 nav a {
@@ -50,7 +53,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    border-bottom: 3px solid #00ADAE;
+    background-image: linear-gradient(0deg, #019292 0%, #005858 90%);
 }
 
 #about-section h1,
@@ -70,11 +73,8 @@ main {
 
 #work-section {
     padding-bottom: 2rem;
-    background-color: #00ADAE;
+    background-color: #019292;
     overflow: hidden;
-
-    border-top: 3px solid #009494;
-    border-bottom: 3px solid #00ced1;
 }
 
 #work-section-header {
@@ -83,7 +83,7 @@ main {
     margin: 6rem 0 5rem 0;
 }
 
-#project-container {
+#project-grid {
     display: grid;
     grid-template-columns: 28vw 28vw 28vw;
     align-items: center;
@@ -91,23 +91,31 @@ main {
     row-gap: 2rem;
 }
 
-.project-wrapper {
+.project-grid-item {
     height: 300px;
 
     background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
 
-    border-radius: 15px;
+    position: relative;
+    transition: 1s;
+}
+.project-grid-item  img {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+
+}
+.project-grid-item img:hover {
+    opacity: 100%;
 }
 
 #contact-section {
-    /* min-height: 100vh; */
     min-width: 100%;
-    background-color: #00ced1;
     padding-bottom: 4rem;
 
     overflow: hidden;
-    border-top: 3px solid #00ADAE;
-    border-bottom: 3px solid #00ADAE;
 }
 
 #contact-section h2 {
@@ -133,8 +141,6 @@ main {
 }
 
 footer {
-    background-color: #00ADAE;
-    border-top: 3px solid #00bcbc;
     min-height: 50px;
     min-width: 100%;
 }
