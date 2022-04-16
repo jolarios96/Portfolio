@@ -1,11 +1,3 @@
-:root {
-    --bg-dark-1: #252526;
-    --bg-dark-2: #1E1E1E;
-
-    background-color: var(--bg-dark-2);
-}
-
-
 html {
     min-width: 100%;
 }
@@ -18,7 +10,7 @@ body {
 }
 
 nav {
-    background-color: rgb(0, 75, 75);
+    background-color: #005858;
     position: fixed;
     top: 0;
 
@@ -26,6 +18,8 @@ nav {
     min-width: 100%;
     align-items: center;
     justify-content: flex-end;
+
+    height: 4rem
 }
 
 nav a {
@@ -44,8 +38,8 @@ main {
     width: 100%;
 }
 
-#about {
-    background-color: #008b8b;
+#about-section {
+    background-color: #009494;
     min-height: 100vh;
     min-width: 100%;
 
@@ -55,35 +49,40 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    border-bottom: 3px solid #00ADAE;
 }
 
-#about h1,
-#about p {
+#about-section h1,
+#about-section p {
     overflow: hidden;
     padding: 0;
     margin: 0;
 }
 
-#about h1 {
-    font-size: 6rem;
+#about-section h1 {
+    font-size: 5rem;
 }
 
-#about p {
-    font-size: 3rem;
+#about-section p {
+    font-size: 2rem;
 }
 
-#work {
-    padding-bottom: 3rem;
-
+#work-section {
+    padding-bottom: 2rem;
     background-color: #00ADAE;
     overflow: hidden;
 
-
+    border-top: 3px solid #009494;
+    border-bottom: 3px solid #00ced1;
 }
-#work h2{
+
+#work-section-header {
     font-size: 4rem;
     text-align: center;
+    margin: 6rem 0 5rem 0;
 }
+
 #project-container {
     display: grid;
     grid-template-columns: 28vw 28vw 28vw;
@@ -100,16 +99,42 @@ main {
     border-radius: 15px;
 }
 
-#contact {
-    display: flex;
-
-    background-color: #00ced1;
-    min-height: 250px;
+#contact-section {
+    /* min-height: 100vh; */
     min-width: 100%;
+    background-color: #00ced1;
+    padding-bottom: 4rem;
+
+    overflow: hidden;
+    border-top: 3px solid #00ADAE;
+    border-bottom: 3px solid #00ADAE;
 }
 
-/* footer {
-    background-color: #00ced1;
-    min-height: 250px;
+#contact-section h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-item-placeholder {
+    width: 75px;
+    height: 75px;
+    background-color: white;
+}
+
+.contact-item-spacer {
+    width: 75px;
+    height: 75px;
+}
+
+footer {
+    background-color: #00ADAE;
+    border-top: 3px solid #00bcbc;
+    min-height: 50px;
     min-width: 100%;
-} */
+}
