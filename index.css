@@ -44,7 +44,7 @@ main {
     width: 100%;
 }
 
-#banner {
+#about {
     background-color: darkcyan;
     min-height: 100vh;
     min-width: 100%;
@@ -56,17 +56,17 @@ main {
     justify-content: center;
     align-items: center;
 }
-#banner h1, #banner p {
+#about h1, #about p {
     overflow: hidden;
     padding: 0;
     margin: 0;
 }
-#banner h1 {
+#about h1 {
     font-size: 4rem;
 }
-#banner p {
+#about p {
     font-size: 2rem;
-x}
+}
 
 footer {
     background-color: darkturquoise;
