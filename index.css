@@ -46,7 +46,6 @@ main {
     min-height: 100vh;
 
     display: flex;
-    overflow: hidden;
 
     flex-direction: column;
     justify-content: center;
@@ -57,7 +56,6 @@ main {
 
 #welcome-section h1,
 #welcome-section p {
-    overflow: hidden;
     padding: 0;
     margin: 0;
 }
@@ -73,14 +71,15 @@ main {
 #work-section {
     min-height: 100vh;
 
+    padding-top: 4rem;
     padding-bottom: 2rem;
     background-color: #019292;
-    overflow: hidden;
 }
 
 #work-section-header {
     font-size: 4rem;
     text-align: center;
+
     margin: 6rem 0 5rem 0;
 }
 
@@ -111,8 +110,6 @@ main {
 .project-card img {
     height: 100%;
     width: 100%;
-
-    /* overflow: hidden; */
 }
 
 .project-card:hover img {
@@ -139,10 +136,8 @@ main {
 }
 
 #contact-section {
-    height: 100vh;
-    padding-bottom: 4rem;
-
-    overflow: hidden;
+    /* height: 100vh; */
+    padding-top: 4rem;
 }
 
 #contact-section h2 {
@@ -168,6 +163,6 @@ main {
 }
 
 footer {
-    min-height: 50px;
-    min-width: 100%;
+    /* min-height: 50px; */
+    height: 100vh;
 }
