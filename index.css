@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-    background-color: #005858;
+    background-color: #005858f6;
     position: fixed;
     top: 0;
 
@@ -43,15 +43,17 @@ main {
 
 #welcome-section {
     background-color: #009494;
-    min-height: 100vh;
-
-    display: flex;
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
 
     background-image: linear-gradient(0deg, #019292 0%, #005858 90%);
+}
+
+#welcome-wrapper {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
 }
 
 #welcome-section h1,
@@ -71,8 +73,7 @@ main {
 #work-section {
     min-height: 100vh;
 
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem;
     background-color: #019292;
 }
 
@@ -135,17 +136,27 @@ main {
     transition: .8s ease all;
 }
 
+
 #contact-section {
-    /* height: 100vh; */
-    padding-top: 4rem;
+    height: 100vh;
+    position: relative;
+}
+
+#contact-wrapper {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
 }
 
 #contact-section h2 {
     font-size: 4rem;
     text-align: center;
+
+    margin-top: 0;
 }
 
-#contact-container {
+#contact-flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -160,9 +171,4 @@ main {
 .contact-item-spacer {
     width: 75px;
     height: 75px;
-}
-
-footer {
-    /* min-height: 50px; */
-    height: 100vh;
 }
