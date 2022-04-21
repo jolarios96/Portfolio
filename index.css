@@ -45,7 +45,7 @@ main {
     background-color: #009494;
     height: 100vh;
 
-    background-image: linear-gradient(0deg, #019292 0%, #005858 95%);
+    background-image: linear-gradient(0deg, #019292 0%, #005858 90%);
 }
 
 #welcome-section h1,
@@ -112,10 +112,7 @@ main {
 }
 
 .project-card:hover img {
-    /* margin-top: -25%; */
-    margin-top: -5%;
-    height: 110%;
-    min-width: 110%;
+    transform: translateX(-50%) perspective(500px) translateZ(50px);
 }
 
 .project-info {
