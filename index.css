@@ -21,14 +21,14 @@ nav {
     align-items: center;
     justify-content: flex-end;
 
-    height: 4rem;
+    height: 3.3rem;
     z-index: 10;
 }
 
 nav a {
     color: rgb(255, 255, 255);
 
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 1rem;
 }
 
@@ -48,6 +48,10 @@ main {
     background-image: linear-gradient(0deg, #019292 0%, #005858 90%);
 }
 
+#landing {
+    width: 100%;
+}
+
 #welcome-section h1,
 #welcome-section p {
     padding: 0;
@@ -64,7 +68,7 @@ main {
 }
 
 #work-section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
 
     padding-top: 2rem;
     background-color: #019292;
@@ -88,8 +92,6 @@ main {
 .project-card {
     height: 300px;
 
-    background-color: orange;
-
     border: .5px solid #019292;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
@@ -99,11 +101,15 @@ main {
     overflow: hidden;
 }
 
+.project-card:hover {
+    transform: scale(105%);
+}
+
 .project-card * {
     transition: .4s ease all;
 }
 
-.project-card img {
+.project-img {
     height: 100%;
     min-width: 100%;
 
@@ -111,7 +117,7 @@ main {
     transform: translateX(-50%);
 }
 
-.project-card:hover img {
+.project-card:hover .project-img {
     transform: translateX(-50%) perspective(500px) translateZ(50px);
 }
 
@@ -129,20 +135,26 @@ main {
     opacity: 0%;
 }
 
+.project-links {
+    width: 100%;
+}
+
+.project-links img {
+    width: 50%;
+}
+
 .project-card:hover .project-info {
     opacity: 100%;
 }
 
 #contact-section {
     height: 100vh;
-    position: relative;
-}
-
-#contact-wrapper {
-    position: absolute;
-    top: 50%;
     width: 100%;
-    transform: translateY(-50%);
+
+    margin: 0 auto;
+
+    padding-top: 300px;
+    position: relative;
 }
 
 #contact-section h2 {
@@ -152,27 +164,37 @@ main {
     margin-top: 0;
 }
 
-#contact-flex {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.github-logo {
+    width: 15%;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(100%, -50%);
 }
 
-.contact-item-placeholder {
-    width: 75px;
-    height: 75px;
-    background-color: white;
+.github-logo:hover {
+    transition: .4s;
+    transform: scale(110%) translate(95%, -50%);
 }
 
-.contact-item-spacer {
-    width: 75px;
-    height: 75px;
+.linkedin-logo {
+    width: 15%;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -50%);
+}
+
+.linkedin-logo:hover {
+    transition: .4s;
+    transform: scale(110%) translate(-95%, -50%);
 }
 
 .vertical-center {
     position: absolute;
     top: 50%;
-    width: 100%;
     transform: translateY(-50%);
 }
 
