@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-    background-color: #005858f6;
+    background-color: #006567f8;
     position: fixed;
     top: 0;
 
@@ -29,7 +29,7 @@ nav a {
     color: rgb(255, 255, 255);
 
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 11.6px 1rem 11.6px 1rem;
 }
 
 nav a:hover {
@@ -45,7 +45,7 @@ main {
     background-color: #009494;
     height: 100vh;
 
-    background-image: linear-gradient(0deg, #019292 0%, #005858 90%);
+    background-image: linear-gradient(#006667 8%, #019292);
 }
 
 #landing {
@@ -226,5 +226,5 @@ footer {
     .github-logo {
         padding: 0;
     }
-    
+
 }
