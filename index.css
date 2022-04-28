@@ -181,6 +181,7 @@ main {
 
 .github-logo {
     max-width: 300px;
+    padding-left: 50px;
 }
 
 .github-logo:hover {
@@ -194,7 +195,7 @@ main {
 }
 
 .linkedin-logo {
-    max-width: 300px;
+    max-width: 350px;
 }
 
 .linkedin-logo:hover {
