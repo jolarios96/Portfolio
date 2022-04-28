@@ -162,7 +162,7 @@ main {
     position: relative;
 
     height: 200px;
-    width: 80%;
+    width: 1024px;
 
     margin: 0 auto;
 
@@ -175,11 +175,6 @@ main {
     align-items: center;
 }
 
-.github-link {
-    height: auto;
-    max-width: 25%;
-}
-
 .github-logo {
     max-width: 300px;
     padding-left: 50px;
@@ -190,13 +185,8 @@ main {
     transform: scale(110%);
 }
 
-.linkedin-link {
-    height: auto;
-    max-width: fit-content;
-}
-
 .linkedin-logo {
-    max-width: 350px;
+    width: 350px;
 }
 
 .linkedin-logo:hover {
@@ -222,4 +212,19 @@ footer {
 .vertical-center h2,
 .vertical-center h1 {
     margin-top: 0;
+}
+
+
+@media (max-width: 1024px) {
+    #link-wrapper {
+
+        height: 400px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .github-logo {
+        padding: 0;
+    }
+    
 }
